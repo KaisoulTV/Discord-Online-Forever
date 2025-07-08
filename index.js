@@ -6,10 +6,10 @@ const bot = new Eris(process.env.token);
 
 bot.on("ready", async () => { // When the bot is ready
   console.log("Ready!");
-  bot.editStatus("dnd", [
+  bot.editStatus("dnd", {
     state: "rbxrise.com",
     type: 4
-  ]);
+  });
 });
 
 bot.on("error", (err) => {
