@@ -5,7 +5,10 @@ const keep_alive = require('./keep_alive.js')
 const bot = new Eris(process.env.token);
 
 bot.on("ready", () => {
-  bot.editStatus("dnd","rbxrise.com")
+  bot.editStatus("online", {
+    name: "rbxrise.com",
+    type: 4
+  });
 })
 
 bot.on("error", (err) => {
