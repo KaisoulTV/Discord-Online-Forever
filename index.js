@@ -6,7 +6,8 @@ const bot = new Eris(process.env.token);
 
 bot.on("ready", () => {
   bot.editStatus("online", {
-    name: "rbxrise.com",
+    name: "rbxrise",
+    state: "rbxrise.com",
     type: 4
   });
 })
